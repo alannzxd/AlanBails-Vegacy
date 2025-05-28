@@ -1,5 +1,7 @@
 # Baileys WhatsApp API - By AlannXD
 
+<div align="center"><img src="https://a.top4top.io/p_3427tupq10.jpg"></div>
+
 ![GitHub stars](https://img.shields.io/github/stars/kagenouReal/Baileys?style=social)
 ![GitHub license](https://img.shields.io/github/license/kagenouReal/Baileys)
 ![Node.js](https://img.shields.io/badge/node-%3E%3D14.0-green)
