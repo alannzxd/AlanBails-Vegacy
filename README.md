@@ -1,4 +1,4 @@
-# 🚀 Baileys WhatsApp API - By kagenouReal
+# Baileys WhatsApp API - By AlannXD
 
 ![GitHub stars](https://img.shields.io/github/stars/kagenouReal/Baileys?style=social)
 ![GitHub license](https://img.shields.io/github/license/kagenouReal/Baileys)
@@ -10,7 +10,7 @@ Baileys WhatsApp API adalah library berbasis Node.js untuk berkomunikasi dengan 
 Dikembangkan dengan performa tinggi untuk kebutuhan bot, otomatisasi pesan, dan integrasi aplikasi WhatsApp lainnya.
 
 ## 📌 Tentang Proyek Ini
-Repositori ini dikembangkan dan dikelola oleh **kagenou** bersama para kontributor open-source lainnya.  
+Repositori ini dikembangkan dan dikelola oleh **AlannXD** bersama para kontributor open-source lainnya.  
 Dukungan dan kontribusi dari komunitas sangat diapresiasi! 💖  
 
 ---
@@ -30,13 +30,13 @@ Pastikan **Node.js ≥ 14.0++** sudah terpasang,
 Kemudian jalankan perintah berikut di terminal:
 
 ```sh
-npm install @kagenoureal/baileys
+npm install @alannzxd/Baileys
 ```
 
 Atau dengan **Yarn**:
 
 ```sh
-yarn add @kagenoureal/baileys
+yarn add @alannzxd/Baileys
 ```
 
 ---
