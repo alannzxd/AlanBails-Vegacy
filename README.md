@@ -18,9 +18,9 @@ Baileys WhatsApp API adalah library berbasis Node.js untuk berkomunikasi dengan 
 
 Dikembangkan dengan performa tinggi untuk kebutuhan bot, otomatisasi pesan, dan integrasi aplikasi WhatsApp lainnya.
 
-## 📌 Tentang Proyek Ini
+## Tentang Proyek Ini
 Repositori ini dikembangkan dan dikelola oleh **AlannXD** bersama para kontributor open-source lainnya.  
-Dukungan dan kontribusi dari komunitas sangat diapresiasi! 💖  
+Dukungan dan kontribusi dari komunitas sangat diapresiasi!   
 
 ---
 
@@ -33,7 +33,7 @@ Dukungan dan kontribusi dari komunitas sangat diapresiasi! 💖
 ✅ **Integrasi event** seperti masuk/keluar grup, pesan diterima, pesan terbaca  
 ---
 
-## 📦 Instalasi
+## Instalasi
 
 Pastikan **Node.js ≥ 14.0++** sudah terpasang,
 Kemudian jalankan perintah berikut di terminal:
@@ -50,7 +50,7 @@ yarn add @alannzxd/AlanBails-Vegacy
 
 ---
 
-## 🚀 Penggunaan Dasar pairing code
+## Penggunaan Dasar pairing code
 
 ```javascript
 const { useMultiFileAuthState, makeWASocket } = require('@alannzxd/AlanBails-Vegacy');
@@ -112,7 +112,7 @@ start();
 
 ---
 
-## 📜 Dokumentasi API
+## Dokumentasi API
 
 | Fitur               | Deskripsi |
 |---------------------|----------|
@@ -125,9 +125,9 @@ start();
 
 ---
 
-## 📩 Contoh Kode Tambahan
+## Contoh Kode Tambahan
 
-### 🪀 Mengirim Semua Interaktif Msg  
+### Mengirim Semua Interaktif Msg  
 ```ts
 await sock.sendMessage(m.chat, {
   text: "halo",
@@ -173,7 +173,7 @@ await sock.sendMessage(m.chat, {
 ```
 
 
-### 🏓 Mengirim Pesan Button  
+### Mengirim Pesan Button  
 ```ts
 sock.sendMessage(m.chat, {
      text: "Hello World !",
@@ -189,7 +189,7 @@ sock.sendMessage(m.chat, {
  },{ quoted: null })
 ```
 
-### 📢 Mengirim Pesan Toko  
+### Mengirim Pesan Toko  
 ```ts
 sock.sendMessage(msg.key.remoteJid, {
     text: "Isi Pesan",
@@ -202,7 +202,7 @@ sock.sendMessage(msg.key.remoteJid, {
 }, { quoted: m })
 ```
 
-### 📊 Hasil Polling dari Newsletter  
+### Hasil Polling dari Newsletter  
 ```ts
 await sock.sendMessage(msg.key.remoteJid, {
     pollResult: {
@@ -215,7 +215,7 @@ await sock.sendMessage(msg.key.remoteJid, {
 }, { quoted: m })
 ```
 
-### 🏷️ Mention di Status  
+### Mention di Status  
 ```ts
 await sock.StatusMentions({ text: "Halo!" }, [
     "123456789123456789@g.us",
@@ -223,7 +223,7 @@ await sock.StatusMentions({ text: "Halo!" }, [
 ])
 ```
 
-### 🃏 Pesan dengan Kartu  
+### Pesan dengan Kartu  
 ```ts
 await sock.sendMessage(msg.key.remoteJid, {
     text: "Halo!",
@@ -243,7 +243,7 @@ await sock.sendMessage(msg.key.remoteJid, {
 }, { quoted: m })
 ```
 
-### 📷 Pesan Album  
+### Pesan Album  
 ```ts
 await sock.sendAlbumMessage(msg.key.remoteJid, [
     { image: { url: "https://example.jpg" }, caption: "Halo Dunia" },
@@ -251,13 +251,13 @@ await sock.sendAlbumMessage(msg.key.remoteJid, [
 ], { quoted: m, delay: 2000 })
 ```
 
-### 📌 Menyimpan & Menyematkan Pesan  
+### Menyimpan & Menyematkan Pesan  
 ```ts
 await sock.sendMessage(msg.key.remoteJid, { keep: message.key, type: 1, time: 86400 })
 await sock.sendMessage(msg.key.remoteJid, { pin: message.key, type: 1, time: 86400 })
 ```
 
-### 📨 Pesan Undangan Grup  
+### Pesan Undangan Grup  
 ```ts
 await sock.sendMessage(msg.key.remoteJid, { 
     groupInvite: { 
@@ -269,10 +269,10 @@ await sock.sendMessage(msg.key.remoteJid, {
     } 
 }, { quoted: m })
 ```
-**Dan Banyak Lagi Kode Pesan Baharu⚡**
+**Dan Banyak Lagi Kode Pesan Baharu**
 ---
 
-## 🤝 Kontribusi
+## Kontribusi
 
 Kami menyambut kontribusi dari siapa saja! Jika ingin membantu:  
 1. **Fork** repositori ini  
@@ -281,9 +281,9 @@ Kami menyambut kontribusi dari siapa saja! Jika ingin membantu:
 
 ---
 
-## 📬 Kontak
+## Kontak
 
-📩 **Email**: kagenoureal@gmail.com  
+📩 **Email**: fuckingmoney@gmail.com  
 🌍 **Website**: [Baileys API](https://github.com/alannzxd/AlanBails-Vegacy)  
 
 ---
