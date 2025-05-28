@@ -30,13 +30,13 @@ Pastikan **Node.js ≥ 14.0++** sudah terpasang,
 Kemudian jalankan perintah berikut di terminal:
 
 ```sh
-npm install @alannzxd/Baileys
+npm install @alannzxd/AlanBails-Vegacy
 ```
 
 Atau dengan **Yarn**:
 
 ```sh
-yarn add @alannzxd/Baileys
+yarn add @alannzxd/AlanBails-Vegacy
 ```
 
 ---
@@ -44,7 +44,7 @@ yarn add @alannzxd/Baileys
 ## 🚀 Penggunaan Dasar pairing code
 
 ```javascript
-const { useMultiFileAuthState, makeWASocket } = require('@kagenouReal/baileys');
+const { useMultiFileAuthState, makeWASocket } = require('@alannzxd/AlanBails-Vegacy');
 const readline = require('readline');
 
 const rl = readline.createInterface({ input: process.stdin, output: process.stdout });
@@ -270,14 +270,12 @@ Kami menyambut kontribusi dari siapa saja! Jika ingin membantu:
 2. **Buat branch baru**  
 3. **Buat Pull Request (PR)**  
 
-💡 Punya ide keren? Silakan buat **Issue** di [repository ini](https://github.com/kagenouReal/Baileys/issues).  
-
 ---
 
 ## 📬 Kontak
 
 📩 **Email**: kagenoureal@gmail.com  
-🌍 **Website**: [Baileys API](https://github.com/kagenouReal/Baileys)  
+🌍 **Website**: [Baileys API](https://github.com/alannzxd/AlanBails-Vegacy)  
 
 ---
 
