@@ -1,6 +1,6 @@
 # Baileys WhatsApp API - By AlannXD
 
-<div align="center"><img src="https://a.top4top.io/p_3427tupq10.jpg"></div>
+<div align="center"><img src="https://files.catbox.moe/2rpl7j.jpg"></div>
 
 <div align='center'>
 
