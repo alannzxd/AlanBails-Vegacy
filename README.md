@@ -2,10 +2,17 @@
 
 <div align="center"><img src="https://a.top4top.io/p_3427tupq10.jpg"></div>
 
-![GitHub stars](https://img.shields.io/github/stars/kagenouReal/Baileys?style=social)
-![GitHub license](https://img.shields.io/github/license/kagenouReal/Baileys)
-![Node.js](https://img.shields.io/badge/node-%3E%3D14.0-green)
-![Contributors](https://img.shields.io/github/contributors/kagenouReal/Baileys)
+<div align='center'>
+
+![GitHub Downloads (all assets, all releases)](https://img.shields.io/github/downloads/whiskeysockets/baileys/total)
+![NPM Downloads](https://img.shields.io/npm/dw/%40whiskeysockets%2Fbaileys?label=npm&color=%23CB3837)
+![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/whiskeysockets/baileys)
+![GitHub License](https://img.shields.io/github/license/whiskeysockets/baileys)
+![Discord](https://img.shields.io/discord/725839806084546610?label=discord&color=%235865F2)
+![GitHub Repo stars](https://img.shields.io/github/stars/whiskeysockets/baileys)
+![GitHub forks](https://img.shields.io/github/forks/whiskeysockets/baileys)
+
+</div>
 
 Baileys WhatsApp API adalah library berbasis Node.js untuk berkomunikasi dengan WhatsApp Web tanpa perlu WebSocket tambahan. Ini adalah hasil modifikasi dari Whiskey Baileys agar lebih stabil dan mendukung lebih banyak tipe pesan.
 
