@@ -107,7 +107,7 @@ Kirim undangan grup melalui tautan atau pesan khusus.
 
 ---
 
-📂 Struktur Folder
+## 📂 Struktur Folder
 
 AlanBails-Vegacy/
 ├── auth/           # Modul autentikasi sesi
