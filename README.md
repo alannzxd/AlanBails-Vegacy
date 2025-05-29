@@ -48,7 +48,7 @@ Tangkap event seperti anggota masuk/keluar grup, pesan dibaca, pesan diterima, d
 ---
 
 ## 🛠️ Instalasi
-```js
+```
 
 git clone https://github.com/alannzxd/AlanBails-Vegacy.git
 cd AlanBails-Vegacy
