@@ -19,14 +19,14 @@ AlanBails-Vegacy adalah library berbasis Node.js yang memanfaatkan protokol What
 
 ---
 
-🧩 Tentang Proyek
+## 🧩 Tentang Proyek
 
 Proyek ini dikembangkan dan dikelola oleh AlannXD bersama komunitas open-source. Kontribusi dan kolaborasi sangat dihargai. Jika Anda tertarik untuk berkontribusi, silakan buat pull request atau laporkan masalah melalui tab Issues.
 
 
 ---
 
-✨ Fitur Unggulan
+## ✨ Fitur Unggulan
 
 ✅ Autentikasi Tanpa QR Code
 Gunakan autentikasi berbasis sesi tanpa perlu memindai QR berulang kali.
@@ -47,16 +47,17 @@ Tangkap event seperti anggota masuk/keluar grup, pesan dibaca, pesan diterima, d
 
 ---
 
-🛠️ Instalasi
+## 🛠️ Instalasi
+```ts
 
 git clone https://github.com/alannzxd/AlanBails-Vegacy.git
 cd AlanBails-Vegacy
 npm install
-
+```
 
 ---
 
-🚀 Penggunaan Dasar
+## 🚀 Penggunaan Dasar
 ```ts
 
 const makeWASocket = require('./index');
@@ -76,7 +77,7 @@ startBot();
 
 ---
 
-🧪 Fitur Lanjutan
+## 🧪 Fitur Lanjutan
 
 🔐 Pairing Kode (Kode 6 Digit)
 Autentikasi perangkat baru dengan kode pairing tanpa QR.
@@ -118,7 +119,7 @@ AlanBails-Vegacy/
 
 ---
 
-🤝 Kontribusi
+## 🤝 Kontribusi
 
 Kami membuka pintu untuk semua bentuk kontribusi, baik berupa:
 
@@ -131,27 +132,14 @@ Dokumentasi
 Refactoring kode
 
 
-> Pastikan Anda membaca CONTRIBUTING.md sebelum membuat pull request.
-
-
 
 
 ---
 
-📄 Lisensi
+## 📄 Lisensi
 
 Proyek ini dirilis di bawah lisensi MIT. Silakan gunakan, modifikasi, dan distribusikan dengan bebas, selama tetap mencantumkan kredit kepada pengembang asli.
 
-
----
-
-📫 Kontak & Komunitas
-
-Author: AlannXD
-
-GitHub: github.com/alannzxd
-
-Telegram: @AlannXD
 
 ---
 
