@@ -107,17 +107,6 @@ Kirim undangan grup melalui tautan atau pesan khusus.
 
 ---
 
-## 📂 Struktur Folder
-
-AlanBails-Vegacy/
-├── auth/           # Modul autentikasi sesi
-├── lib/            # Logika utama protokol WhatsApp
-├── messages/       # Handler pesan dan media
-├── plugins/        # Plugin tambahan (opsional)
-└── index.js        # Entry point utama
-
-
----
 
 ## 🤝 Kontribusi
 
