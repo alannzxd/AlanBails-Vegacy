@@ -137,6 +137,3 @@ Proyek ini dirilis di bawah lisensi MIT. Silakan gunakan, modifikasi, dan distri
 📩 **Email**: fuckingmoney@gmail.com  
 🌍 **Website**: [Baileys API](https://github.com/alannzxd/AlanBails-Vegacy)  
 
----
-
-🚀 **Semoga kamu suka & semangat ngoding!** �
