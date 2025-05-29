@@ -72,7 +72,7 @@ async function startBot() {
 }
 
 startBot();
-
+```
 
 ---
 
