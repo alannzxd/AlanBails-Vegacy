@@ -14,148 +14,132 @@
 
 </div>
 
-Baileys WhatsApp API adalah library berbasis Node.js untuk berkomunikasi dengan WhatsApp Web tanpa perlu WebSocket tambahan. Ini adalah hasil modifikasi dari Whiskey Baileys agar lebih stabil dan mendukung lebih banyak tipe pesan.
+AlanBails-Vegacy adalah library berbasis Node.js yang memanfaatkan protokol WhatsApp Web melalui Baileys. Proyek ini merupakan hasil modifikasi dari Whiskey Baileys dengan fokus pada stabilitas, performa tinggi, dan dukungan penuh terhadap fitur-fitur WhatsApp Multi-Device (MD).
 
-Dikembangkan dengan performa tinggi untuk kebutuhan bot, otomatisasi pesan, dan integrasi aplikasi WhatsApp lainnya.
-
-## Tentang Proyek Ini
-Repositori ini dikembangkan dan dikelola oleh **AlannXD** bersama para kontributor open-source lainnya.  
-Dukungan dan kontribusi dari komunitas sangat diapresiasi!   
 
 ---
 
-## ✨ Fitur Utama
+🧩 Tentang Proyek
 
-✅ **Autentikasi tanpa QR** menggunakan session authentication  
-✅ **Dukungan Multi-Device (MD)** terbaru dari WhatsApp  
-✅ **Kirim & terima pesan** dalam berbagai format  
-✅ **Mengelola grup** (buat grup, tambahkan/kick anggota, atur deskripsi, dll.)  
-✅ **Integrasi event** seperti masuk/keluar grup, pesan diterima, pesan terbaca  
+Proyek ini dikembangkan dan dikelola oleh AlannXD bersama komunitas open-source. Kontribusi dan kolaborasi sangat dihargai. Jika Anda tertarik untuk berkontribusi, silakan buat pull request atau laporkan masalah melalui tab Issues.
+
+
 ---
 
-## 🔐 Penggunaan Dasar Pairing Code
+✨ Fitur Unggulan
 
-```js
-import makeWASocket, { useMultiFileAuthState } from '@whiskeysockets/baileys';
+✅ Autentikasi Tanpa QR Code
+Gunakan autentikasi berbasis sesi tanpa perlu memindai QR berulang kali.
 
-const startSock = async () => {
-  const { state, saveCreds } = await useMultiFileAuthState('./auth');
-  const sock = makeWASocket({
-    auth: state,
-    printQRInTerminal: true,
+✅ Dukungan WhatsApp Multi-Device (MD)
+Kompatibel dengan sistem multi-device terbaru dari WhatsApp.
+
+✅ Pengiriman & Penerimaan Pesan Lengkap
+Dukungan untuk teks, gambar, video, dokumen, stiker, audio, dan lainnya.
+
+✅ Manajemen Grup
+Buat grup, tambah/hapus anggota, ubah deskripsi, dan kelola lainnya melalui API.
+
+✅ Integrasi Event Real-Time
+Tangkap event seperti anggota masuk/keluar grup, pesan dibaca, pesan diterima, dll.
+
+
+
+---
+
+🛠️ Instalasi
+
+git clone https://github.com/alannzxd/AlanBails-Vegacy.git
+cd AlanBails-Vegacy
+npm install
+
+
+---
+
+🚀 Penggunaan Dasar
+
+const makeWASocket = require('./index');
+
+async function startBot() {
+  const sock = makeWASocket();
+
+  sock.ev.on('messages.upsert', async ({ messages }) => {
+    const msg = messages[0];
+    if (!msg.message) return;
+    await sock.sendMessage(msg.key.remoteJid, { text: 'Halo dari bot!' });
   });
+}
 
-  sock.ev.on('creds.update', saveCreds);
-
-  sock.ev.on('connection.update', async (update) => {
-    const { connection, lastDisconnect, qr, pairingCode } = update;
-
-    if (connection === 'open') {
-      console.log('✅ Terhubung ke WhatsApp!');
-    }
-
-    if (pairingCode) {
-      console.log('📲 Pairing code:', pairingCode);
-    }
-  });
-};
-
-startSock();
+startBot();
 
 
 ---
 
-📚 Dokumentasi API
+🧪 Fitur Lanjutan
 
-Fitur	Deskripsi
+🔐 Pairing Kode (Kode 6 Digit)
+Autentikasi perangkat baru dengan kode pairing tanpa QR.
 
-generatePairingCode()	Mengirim pairing code 6 digit
-sendInteractive()	Mengirim semua jenis pesan interaktif
-sendButton()	Mengirim pesan dengan tombol pilihan
-sendStore()	Mengirim pesan toko (product message)
-Lihat dokumentasi lengkap: Baileys Docs	
+🧾 Pesan Interaktif
+Kirim pesan dengan tombol, daftar, dan quick reply.
+
+🛍️ Pesan Toko (Product Messages)
+Kirim katalog produk dengan gambar, harga, dan deskripsi.
+
+📊 Polling & Voting
+Buat polling interaktif dalam grup atau chat pribadi.
+
+🧷 Mention & Status
+Mention pengguna dalam pesan dan kelola status.
+
+🖼️ Pesan Album & Kartu (Card Messages)
+Kirim galeri gambar atau pesan dengan tampilan kartu.
+
+📌 Simpan & Sematkan Pesan
+Simpan dan sematkan pesan penting dalam chat.
+
+📩 Undangan Grup
+Kirim undangan grup melalui tautan atau pesan khusus.
+
+
+
+---
+
+📂 Struktur Folder
+
+AlanBails-Vegacy/
+├── auth/           # Modul autentikasi sesi
+├── lib/            # Logika utama protokol WhatsApp
+├── messages/       # Handler pesan dan media
+├── plugins/        # Plugin tambahan (opsional)
+└── index.js        # Entry point utama
+
+
+---
+
+🤝 Kontribusi
+
+Kami membuka pintu untuk semua bentuk kontribusi, baik berupa:
+
+Pelaporan bug
+
+Penambahan fitur baru
+
+Dokumentasi
+
+Refactoring kode
+
+
+> Pastikan Anda membaca CONTRIBUTING.md sebelum membuat pull request.
+
 
 
 
 ---
 
-🔧 Contoh Kode Tambahan
+📄 Lisensi
 
-📋 Mengirim Semua Interaktif Msg
-
-await sock.sendMessage(id, {
-  text: "Pilih salah satu opsi!",
-  footer: "Interaktif msg",
-  templateButtons: [
-    { index: 1, urlButton: { displayText: "YouTube", url: "https://yt.alannzxd.my.id" } },
-    { index: 2, callButton: { displayText: "Panggil Dev", phoneNumber: "+62xxx" } },
-    { index: 3, quickReplyButton: { displayText: "Klik aku", id: "id_click" } },
-  ],
-});
-
-🔘 Mengirim Pesan Button
-
-await sock.sendMessage(id, {
-  text: "Ini pesan dengan tombol",
-  buttons: [
-    { buttonId: "id1", buttonText: { displayText: "Tombol 1" }, type: 1 },
-  ],
-});
-
-🛍️ Mengirim Pesan Toko
-
-await sock.sendMessage(id, {
-  product: {
-    productImageCount: 1,
-    title: "Top Up Game",
-    description: "Aman dan terpercaya",
-    currencyCode: "IDR",
-    priceAmount1000: 10000,
-  }
-});
-
-🗳️ Hasil Polling dari Newsletter
-
-sock.ev.on('messages.upsert', ({ messages }) => {
-  const msg = messages[0];
-  if (msg.pollUpdates) {
-    console.log("Polling Results:", msg.pollUpdates);
-  }
-});
-
-👥 Mention di Status
-
-await sock.sendMessage('status@broadcast', {
-  text: "Halo semuanya 👋",
-  mentions: ['628xxx@s.whatsapp.net']
-});
-
-🖼️ Pesan dengan Kartu
-
-await sock.sendMessage(id, {
-  text: "Berita Terbaru",
-  externalAdReply: {
-    title: "Lihat selengkapnya",
-    body: "News Channel",
-    thumbnailUrl: "https://example.com/image.jpg",
-    mediaType: 1,
-    sourceUrl: "https://example.com"
-  }
-});
-
-
----
-
-📌 Fitur Tambahan Lain
-
-💬 Kirim pesan album / galeri
-
-📥 Menyimpan & menyematkan pesan
-
-📨 Undangan grup via chat
-
-🎨 Format teks kaya (bold, italic, dll)
-
+Proyek ini dirilis di bawah lisensi MIT. Silakan gunakan, modifikasi, dan distribusikan dengan bebas, selama tetap mencantumkan kredit kepada pengembang asli.
 
 
 ---
@@ -163,6 +147,8 @@ await sock.sendMessage(id, {
 📫 Kontak & Komunitas
 
 Author: AlannXD
+
+GitHub: github.com/alannzxd
 
 Telegram: @AlannXD
 
