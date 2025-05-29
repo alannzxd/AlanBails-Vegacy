@@ -57,7 +57,7 @@ npm install
 ---
 
 🚀 Penggunaan Dasar
-``js
+```ts
 
 const makeWASocket = require('./index');
 
